@@ -4,339 +4,400 @@
 <style>
 
 body, html {
-
-background-color: #eee;
-font-family: 'Open Sans', sans-serif;
-font-weight:lighter;
-color:grey;
-height: 100%;
-width:100%;
-
-
-}
-
-.aboutbox{
-float:right;
-position:relative;
-margin-right:5%;	
-margin-top:2%;
-height:35%;
-width:40%;
-
-}
-
-.portfoliocontainer1{
-
-
+	background-color: #eee;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight: lighter;
+	color: grey;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 
 }
 
 
+a {
+	color:grey;
+	text-decoration:none;
+}
 
-.page{
+b, a:hover{
+	color: #fabfab;
+}
 
+.page {
 	height:100%;
-	width:100%;
-}
+	background-color:#eeeeee;
+	/*
+ 	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.2), 
+      rgba(0, 0, 0, 0.2)
+    ),	 url(photography/22.JPG) no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	*/
+	 }
 
-#splash{
 
+/* Splash Page */
+
+#splash {
  background: 
-
     linear-gradient(
       rgba(0, 0, 0, 0.6), 
       rgba(0, 0, 0, 0.6)
     ),
 
-    url(1.JPG) center center;
-
-background-size: cover;
-height:100%;
-     margin-left:-8px;
-	top: 0;
-	right: 0;
-	bottom: 0;
-     margin-top:-10px;
-	width:100%;
-	min-height: 360px;
-	background-attachment: fixed;
-
-position:static;
-
-
-
-
-
-}
-
-
-
-.navbox{
-
-
-display:inline-block;
-padding-left:20px;
-padding-right:20px;
-padding-top:5px;
-padding-bottom:5px;
-border:2px solid white;
-color:white;
-font-size:16px;
-margin-bottom:20px;
-
-
-
-}
-
-.navbox a{
-text-decoration: none;
-	color:white;
-}
-
-
-
-
-.navbox:hover{
-
-background-color:rgba(255, 255, 255, 0.4);
--webkit-transition: background 0.5s linear;
-        -moz-transition: background 0.5s linear;
-        -ms-transition: background 0.5s linear;
-        -o-transition: background 0.5s linear;
-        transition: background 0.5s linear;
-
-
-
-
-}
-
-#splashtext{
-	background-color:rgba(255, 255, 255, 0.15);
-	position:relative;
- 	margin:auto;
-	top:40%;
-    letter-spacing:4px;
-    text-align:center;
-    color:white;
-    font-size:4em;
-    width:40%;
-    border:2px solid white;
-
-}
-
-
-.box {
-    position:relative;
-    margin:auto;
-    top:30%;
-	background-color:white;
-    width:100%;
-	height:45%;
-	margin-left:-8px;
-	padding-top:5px;
-
-	
-}
-
-.largebox{
-
-    position:relative;
-    margin:auto;
-    top:20%;
-	background-color:white;
-    width:100%;
-	height:65%;
-	margin-left:-8px;
-	padding-top:5px;
-
-
-
-}
-
-footer{
-
-
-background-color:rgba(34, 34, 34, 0.7);
-padding-top:25px;
-padding-bottom:25px;
-text-align: center;
-color:white;
-margin-left:-10px;
-}
-
-#navbar{
-
-background-color:rgba(84, 84, 84, 0.7);
-position:fixed;
-width:99%;
-text-transform: uppercase;
-color:white;
-text-align:right;
-padding-top:10px;
-padding-right:20px;
-padding-bottom:10px;
-margin-left:-8px;
-z-index:999;
-font-size: 14px;
-letter-spacing:2px;
-
-}
-
-#navbar a{
-
-	color:white;
-	text-decoration: none;
-}
-
-
-
-#navbar a:hover{
-
-	text-decoration:underline;
-}
-
-h1 {
-
-	text-transform: uppercase;
-	font-weight:lighter;
-	letter-spacing: 3px;
-	color:gray;
-	font-size:2em;
-	text-align:center;
-
-
-
+  	  url(1.JPG) no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
 
 }
 
 .splash-arrow {
-
-
-	position: absolute;
-	bottom: 55px;
+	position:absolute;
+	bottom:50px;
 	left: 50%;
-	margin-left: -25px;
-
 	width: 50px;
 	height: 50px;
-
-
-	
 }
 
 .splash-arrow:hover {
-	
-	bottom: 50px;
+	bottom:45px;
+}
+
+#splashbox {
+	background-color:rgba(255, 255, 255, 0.15);
+	position:relative;
+ 	left:31%;
+	top:40%;
+    width:40%;
+    border:2px solid white;
+
+    padding-bottom:10px;
+    letter-spacing:4px;
+    text-align:center;
+    color:white;
+    font-size:3.5vw;
 }
 
 
+/* Navigation */
+
+
+.navbox {
+	display:inline-block;
+	padding-left:1em;
+	padding-right:1vw;
+	padding-top:5px;
+	padding-bottom:5px;
+	border:2px solid white;
+	font-size:0.9vw;
+}
+
+.navbox a {
+	text-decoration: none;
+	color:white;
+}
+
+
+.navbox:hover { 
+	background-color:rgba(255, 255, 255, 0.4);
+	-webkit-transition: background 0.5s linear;
+	        -moz-transition: background 0.5s linear;
+	        -ms-transition: background 0.5s linear;
+	        -o-transition: background 0.5s linear;
+	        transition: background 0.5s linear;
+}
+
+#navbar {
+	background-color: rgba(54, 54, 54, 0.7);
+	position: fixed;
+	width: 100%;
+
+	padding: 8px;
+  	right: 1px;
+  	padding-right: 20px;
+	z-index: 999;
+
+	text-transform: uppercase;
+	color: white;
+	text-align: right;
+	font-size: 14px;
+	letter-spacing: 2px;
+}
+
+#navbar a {
+	color: white;
+	text-decoration: none;
+}
+
+
+#navbar a:hover{
+	text-decoration: underline;
+}
+
+
+
+
+/* Page Boxes */
+
+
+
+h1 {
+	text-align: center;
+	padding-bottom: 1%;
+	text-transform: uppercase;
+	font-weight: bolder;
+	color: gray;
+	font-size: 2em;
+	letter-spacing: 3px;
+}
+
+.box {
+    position:relative;
+    top:30%;
+	background-color: rgba(255, 255, 255, 0.95);
+	height:45%;
+	padding:10px;
+
+}
+
+.largebox {
+    position: relative;
+    top: 20%;
+	background-color: rgba(255, 255, 255, 0.95);
+	height: 65%;
+	padding: 5px;
+}
+
+
+.textright{
+	float:right;
+	width: 48%;
+	height: 60%;
+	padding-right: 7%;
+	overflow: hidden;
+
+}
+
+
+
+
+/* Portfolio Pages */
+
+#portfoliopage1{
+
+}
+
+#portfoliopage2{
+	display:none;
+}
+
+#portfoliopage3{
+	display:none;
+}
+
+#portfoliopage4{
+	display:none;
+}
+
+.portfoliolink{
+	text-transform:uppercase;
+
+}
+
+.portfoliolink:hover {
+	cursor: pointer;
+	color:#fabfab;
+	transition-duration: 0.5s;
+}
+
+
+/* Footer */
+
+footer {
+	background-color:rgba(34, 34, 34, 0.7);
+	padding:1%;
+	text-align: center;
+	color:white;
+	font-size: 0.8vw;
+}
 
 
 </style>
 
+
+
 <html>
+	<head> 
+		<title>Katie Chang</title>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300' rel='stylesheet' type='text/css'>
+	</head>
 
 
-<head> <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300' rel='stylesheet' type='text/css'>
+	<body>
 
-<title>Katie Chang</title>
+		<!--TOP NAV-->
 
-</head>
-<body>
+		<div id="navbar">
+			<a href="#top" class="smoothScroll">top</a> |
+			<a href="#about" class="smoothScroll">about</a> | 
+			<a href="#portfolio" class="smoothScroll">portfolio</a> | 
+			<a href="#contact" class="smoothScroll">contact</a>
+		</div>
 
-<div id="navbar">
+		<!--SPLASH PAGE-->
 
+		<div class="page" id="splash">
+			<a name="top"></a>
+			<div id="splashbox">
 
-	<a href="#about" class="smoothScroll">about</a> | <a href="#portfolio" class="smoothScroll">portfolio</a> | <a href="#contact" class="smoothScroll">contact</a></div>
+				KATIE CHANG
 
+				<nav>
 
+					<div class="navbox">
+						<a href="#about" class="smoothScroll">ABOUT</a>
+					</div>
 
+					<div class="navbox">
+						<a href="#portfolio" class="smoothScroll">PORTFOLIO</a>
+					</div>
 
+					<div class="navbox">
+						<a href="#contact" class="smoothScroll">CONTACT</a>
+					</div>
 
+				</nav>
 
-<div id="splash">
+			</div>
 
-	<div id="splashtext">
-	KATIE CHANG
-
-	<nav>
-<div class="navbox"><a href="#about" class="smoothScroll">ABOUT</a></div>
-<div class="navbox"><a href="#portfolio" class="smoothScroll">PORTFOLIO</a></div>
-<div class="navbox"><a href="#contact" class="smoothScroll">CONTACT</a></div>
-
-
-</nav>
-
-</div>
-
-<div class="splash-arrow"><a href="#portfolio" class="smoothScroll"><img src="down-arrow.png"></a></div>
-
-
-
-</div>
-
-
-
-<a name="about"></a>
-<div class="page">
-	<div class="box"> 
+				<div class="splash-arrow">
+					<a href="#about" class="smoothScroll"><img src="down-arrow.png"></a>
+				</div>
+		</div>
 
 
-		<h1><font color="fabfab"><b>|</b></font> ABOUT</h1>
-	<div class="aboutbox"> 
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique mauris id luctus scelerisque. Aliquam nisl nunc, commodo ac aliquet a, ultricies in nibh. Vestibulum molestie turpis eu commodo vestibulum. Etiam sit amet quam sit amet orci maximus luctus sit amet vitae tortor. Quisque tincidunt nulla quis hendrerit sollicitudin. Maecenas vehicula fermentum tellus vel eleifend. Aenean malesuada, nibh a semper maximus, felis nulla ultrices magna, ac feugiat nunc leo in magna. Mauris ultricies fermentum tempor. Proin elementum, ex congue egestas mattis, justo eros egestas mauris, quis commodo erat tortor non massa.
-</div>
+		<!--ABOUT PAGE-->
 
-		
-</div>
-</div>
+		<a name="about"></a>
+			<div class="page" id="about">
+				<div class="box"> 
 
+					<h1><font color="fabfab"><b>|</b></font> ABOUT</h1>
 
-<a name="portfolio"></a>
-<div class="page">
+						<div class="textright"> 
+
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.<p>
+							 Sed tristique mauris id luctus scelerisque. Aliquam nisl nunc, commodo ac aliquet a, ultricies in nibh. Vestibulum molestie turpis eu commodo vestibulum. Etiam sit amet quam sit amet orci maximus luctus sit amet vitae tortor. 
+							<p><br>
+
+							<b>+</b> EMAIL: katiechang09@gmail.com<br>
+							<b>+</b> PHONE: 605-762-0889<br><br>
+							<b>+</b> RESUME
+
+						</div>
+				</div>
+			</div>
+
+		<!--PORTFOLIO PAGE-->
+
+		<a name="portfolio"></a>
+			<div class="page" id="portfolio">
+				<div class="largebox">
+
+					<h1><font color="fabfab"><b>|</b></font> Portfolio</h1>
+
+					<hr><center>
+
+					<span id="pLink1" class="portfoliolink" onclick="show(1)">Page 1</span>
+					 &nbsp&nbsp&nbsp&nbsp&nbsp 
+					<span id="pLink2" class="portfoliolink" onclick="show(2)">Page 2</span>
+					 &nbsp&nbsp&nbsp&nbsp&nbsp  
+					<span id="pLink3" class="portfoliolink" onclick="show(3)">Page 3</span>
+					 &nbsp&nbsp&nbsp&nbsp&nbsp 
+					<span id="pLink4" class="portfoliolink" onclick="show(4)">Page 4</span>
+					<hr>
+				
+						<div id="portfoliopage1">
+							<!--TODO: Portfolio Pages-->
+							<a href="http://katiech.github.io/forestgame">Incremental Game</a>
+						</div>
+
+						<div id="portfoliopage2">
+							Page 2
+						</div>
+
+						<div id="portfoliopage3">
+							Page 3
+						</div>
+
+						<div id="portfoliopage4">
+
+							Page 4
 	
-	<div class="largebox">
+						</div>
 
-	<h1><font color="fabfab"><b>|</b></font> Portfolio</h1>
-
-	<hr><center>Photography // Graphic Design 1 // Graphic Design 2 // Web Design // Digital Artwork
-	<hr>
+				</div>
+			</div>
 
 
-
-<div class="portfoliocontainer1">
-
-
-
-</div>
-
+		<!--CONTACT PAGE-->
+		
+		<div class="page">
+			<div class="box"> 
+				<a name="contact"></a>
 
 
+					<h1><b>|</b></font> CONTACT</h1>
+
+					<div class="textright">
+						<br><br><font size="5">
+							<b>+</b> EMAIL: katiechang09@gmail.com<br>
+							<b>+</b> PHONE: 605-762-0889<p><br>
+							<b>+</b> RESUME
+
+						</font>
+					</div>
+				</div>
+			</div>
+
+		<!--FOOTER-->
+
+		<footer>
+			(c) FOOTER 2016
+		</footer>
+
+		<!--JS-->
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/smoothscroll.js"></script>
+
+		<script>
+
+		function show(page) {
+			for (i = 1; i <= 4; i++) {
+				if (i == page) {
+		  	  		document.getElementById("portfoliopage" + i).style.display = "block";
+		  	  		document.getElementById("pLink" + i).style.borderBottom = "2px solid #fabfab";
+		  	  	}
+		  	  		else {
+		  	  			document.getElementById("portfoliopage" + i).style.display = "none";
+		  	  			document.getElementById("pLink" + i).style.borderBottom = "none";
+		  			}
+			}
+		}   
+					
+
+		</script>
 
 
-
-</div>
-</div>
-
-
-
-<a name="contact"></a>
-<div class="page">
-	<div class="box"> 
-
-		<h1><font color="fabfab"><b>|</b></font> CONTACT</h1>
-</div>
-</div>
-
-<footer>FOOTER</footer>
-
-
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-
-
-<script type="text/javascript" src="js/smoothscroll.js"></script>
-
-</body>
+	</body>
 </html>
 
